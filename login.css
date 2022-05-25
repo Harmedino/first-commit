@@ -1,0 +1,129 @@
+.linear {
+  width: 40%;
+  height: 650px;
+  background-image: linear-gradient(to right, #7a3d95, #463890);
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.linear img {
+  width: 120px;
+  height: 100px;
+}
+.linear h1 {
+  color: #a99ac7;
+  font-size: 40px;
+  line-height: 52px;
+}
+.linear .fafa {
+  height: 100px;
+  width: 20%;
+  margin-top: 10px;
+}
+.linear .fafa i {
+  margin-bottom: 60px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.linear h2 {
+  color: #a99ac7;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 50px;
+  margin-left: -15px;
+}
+
+.aside {
+  width: 60%;
+  height: 650px;
+  background-color: rgb(246, 250, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside .center {
+  width: 90%;
+  text-align: center;
+}
+.aside h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #393842;
+}
+.aside p {
+  font-size: 24px;
+  color: #393842;
+}
+.aside ul li {
+  list-style: none;
+}
+.aside ul li button {
+  background-color: #157575;
+  color: white;
+  width: 320px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: start;
+}
+.aside ul li button .bott {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.aside ul li button span {
+  margin-left: 100px;
+}
+.aside ul li .small small {
+  font-size: 15px;
+}
+.aside ul li .small .hr {
+  height: 30px;
+  width: 40px;
+  border: 3px solid red;
+}
+.aside button {
+  color: #2d8384;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+}
+
+.chat {
+  width: 50px;
+  height: 50px;
+  background-color: #4b46a9;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0px, 0px, 5px black;
+}
+
+footer {
+  background-color: #211f47;
+  width: 100%;
+  height: 130px;
+  padding: 0px 34px;
+}
+footer h4 {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 15px;
+}
+footer img {
+  margin-top: 30px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=login.css.map */
