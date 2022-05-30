@@ -1,0 +1,162 @@
+header {
+    width: 100%;
+    height: 79px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+}
+
+header img {
+    align-items: center;
+    height: 100px;
+}
+
+header .collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4b4b6e;
+}
+
+header ul li .nav-link:hover {
+    padding: 10px;
+    background-color: #d8e2f5;
+    color: #145deb;
+    border-radius: 5px;
+}
+
+header ul li .products {
+    min-height: 100px;
+    width: 650px;
+    justify-content: space-around;
+}
+
+header ul li .products .product {
+    line-height: 30px;
+    width: 50%;
+    height: fit-content;
+}
+
+header ul li .products .product img {
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+}
+
+header ul li .products .product b {
+    color: #4b4b6e;
+    display: block;
+}
+
+header ul li .products .product p {
+    font-size: 15px;
+    color: #4b4b6e;
+}
+
+header ul li .products .platform {
+    width: 50%;
+    line-height: 30px;
+}
+
+header ul li .resources {
+    min-height: 80px;
+    width: 550px;
+    justify-content: space-around;
+}
+
+header ul li .resources b {
+    color: #4b4b6e;
+    display: block;
+}
+
+header ul li .company {
+    width: 300px;
+    min-height: 80px;
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+header ul li .company div {
+    margin-top: 20px;
+}
+
+header ul li .company div a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: #3c3c62;
+}
+
+header ul li .company div a b {
+    color: white;
+    padding: 5px 10px;
+    background-color: purple;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+header .login a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header .login .log {
+    font-weight: 700;
+    font-size: 17px;
+    color: #3c3c62;
+}
+
+header .log:hover {
+    color: #5489f0;
+}
+
+header .book {
+    padding: 10px 30px 10px 30px;
+    background-color: #e7eefd;
+    font-weight: 700;
+    font-size: 16px;
+    color: #145deb;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+header .book:hover {
+    color: #1e1eb4;
+}
+
+header .sign {
+    background-color: #145deb;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+header .sign:hover {
+    background-color: #063dad;
+    color: white;
+}
+
+.body{
+    height: 500px;
+    width: 100%;
+    background-color: green;
+}

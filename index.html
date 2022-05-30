@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,271 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 </head>
+
 <body>
-    
+    <div class="chat">
+        <i class="fa fa-comment-o" style="font-size:30px;"></i>
+    </div>
+
+    <header class="navbar navbar-expand-xl bg-light w-100">
+        <img src="./image/logo.png" alt="" class="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="d-flex">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu products mt-4">
+                        <div class="dropdown-item  d-flex ">
+
+                            <div class="product">
+                                <p>PRODUCTS</p>
+
+                                <div class="d-flex "><img src="./image/open-source.svg" alt="">
+                                    <div class="flex ml-3">
+                                        <b>Snyk Open Source</b >
+                                        <p>Avoid Vulnerable dependencies</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex "><img src="./image/code.svg" alt="">
+                                    <div class="flex  ml-3">
+                                        <b class="">Snyk Code</b>
+                                        <p>Secue your code as it's written</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex "><img src="./image/tainer.svg" alt="">
+                                    <div class="flex  ml-3">
+                                        <b>Snyk Container</b>
+                                        <p>Keep your base image secure</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex "><img src="./image/infracture.svg" alt="">
+                                    <div class="flex  ml-3 ">
+                                        <b>Infrastructure as code</b>
+                                        <p>Fix misconfigurations in the cloud</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="platform ">
+                                <p>PLATFORM</p>
+                                <div class="w-50">
+                                <b>What is Snyk?</b>
+                                <p>See Snyk's developer-first security platform in action</p>
+                                </div>
+                                <div>
+                                <b>Developers Security Platform</b>
+                                <p>See Snyk's developer-first security platform in action</p>
+                                </div>
+                                <div>
+                                <b>What is Snyk?</b>
+                                <p>See Snyk's developer-first security platform in action</p>
+                                </div>
+                                <div>
+                                <b>What is Snyk?</b>
+                                <p>See Snyk's developer-first security platform in action</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Resources </a>
+                    <div class="dropdown-menu resources mt-4 ">
+                        <div class="dropdown-item d-flex ">
+                            <div class="using w-50">
+                                <p class="mt-4">USING SNYK</p>
+                                
+                            <div class="mt-3"> <b >Documentation</b> </div>
+                            <div class="mt-3"> <b >Vulnerability</b> </div>
+                            <div class="mt-3">  <b >Product training</b> </div>
+                            <div class="mt-3">   <b >Customers success</b> </div>
+                            <div class="mt-3">  <b>Support portal & FAQ's</b> </div>
+                            </div>
+                            <div class="learn w-50">
+                                 <p class="mt-4">LEARN & CONNECT</p>
+                            <div class="mt-3">  <b class="mt-3">Blogs</b></div>
+                            <div class="mt-3"> <b class="mt-3">community</b></div>
+                            <div class="mt-3">  <b class="mt-3">Events & webinars</b></div>
+                            <div class="mt-3"> <b class="mt-3">DevSecOps hub</b></div>
+                            <div class="mt-3">  <b class="mt-3">Developer & security resources</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Company </a>
+                    <div class="dropdown-menu mt-4">
+                        <div class="dropdown-item company">
+                            <div> <a href="#">About Snyk</a> </div>
+                            <div> <a href="#">Costomers</a> </div>
+                            <div> <a href="#">Partners</a> </div>
+                            <div> <a href="#">Newsroom</a> </div>
+                            <div> <a href="#">Snyk Impact</a> </div>
+                            <div> <a href="#">Contact Us</a> </div>
+                            <div> <a href="#">Jobs at Snyk <b>We are hiring</b></a> </div>
+                        </div>
+                    </div>
+                </li>
+                <li class=""> <a class="nav-link " href="#">pricing</a></li>
+            </ul>
+
+            <div class="login">
+                <a href="./login.html" class="log">Log in</a>
+                <a href="#" class="book ">Book a demo</a>
+                <a href="./login.html" class="sign">Sign up</a>
+            </div>
+
+        </div>
+    </header>
+    <!-- section head -->
+
+    <div class="w-100 d-flex section ">
+      <div class="side-1  ">
+          <div class="align">
+              <a href="#" class="mt-4"> TopCoat joins Snyk to build out analytics capabilities <i class="fa fa-arrow-right"></i></a>
+        
+        <h1 class="mt-5">Developer loved,
+            security trusted.</h1>
+        
+        <p class="mt-4 text-light ">Find and automatically fix vulnerabilities in your code, open source dependencies,
+            containers, and infrastructure as
+            code — all powered by Snyk’s industry-leading security intelligence.</p>
+        
+        <h5 class="">DEVELOPER SECURITY FOR TEAMS OF ALL SIZES</h5>
+        
+        <p class="mt-3 text-light ">Get started with a free forever account, and scale up if needed.
+            No credit card required.</p>
+
+            <div class="ancors mt-5">
+                <a href="#" class="scan">Scan your code </a>  <a href="#" class="demo">Book a demo <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+
+            </div>
+      </div>
+
+      <div class="side-2  ">
+        <img class="sparkles" src="./image/homepage-sparkles.svg" alt="">
+            
+                <video width="100%" height="inherit" style="border-radius: inherit" autoplay="" muted="" playsinline="" class="mt-5">
+                    <source src="https://snyk.io/wp-content/uploads/homepage-ide-animation.mp4" type="video/mp4">
+                   
+                </video>
+        
+      </div>
+        
+    </div> 
+    <div class="section-btom"><img src="./image/homepage-wave-dark.svg" alt="">
+    <img class="patch-alert" src="./image/patch-alert.svg" alt=""></div>
+
+    <div class="section-img w-100 mb-5">
+        <h2>MILLIONS OF DEVELOPERS BUILD SECURELY WITH SNYK</h2>
+
+        <div class="logo-bar">
+            <ul class="d-flex  ml-5">
+                <li> <img src="https://snyk.io/wp-content/uploads/AWS-Logo-150x90.png" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/logo-google.svg" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/logo-australia-post.svg" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/logo-data-dog.svg" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/logo-salesforce.svg" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/logo-atlassian.svg" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/logo-twilio.svg" alt=""></li>
+                <li> <img src="https://snyk.io/wp-content/uploads/revolut-logo-black-1-1.svg" alt=""></li>
+            </ul>
+        </div>
+
+      
+    </div>
+
+
+    <div class="section-middle mt-5 w-100">
+         <h1>Find and fix vulnerabilities
+        in 5 minutes</h1>
+
+
+      <center class="mt-5 mb-5 txt-electric-blue"> <a href="#" class="what-is"> what is snyk? <i class="fa fa-arrow-right"></i></a> </center>
+
+      
+<div class="outside-box d-flex w-100" >
+        <div class="box w-30">
+            <img src="./image/integrated.PNG" alt="" class="mb-4">
+            <h3 class="mb-3">Integrate easily</h3>
+            <p>Snyk comes to you, weaving security expertise into your existing IDEs, repos, and workflows.</p>
+        </div>
+        <div class="box w-30">
+            <img src="./image/scan.PNG" alt="" class="mb-4">
+            <h3 class="mb-3">Scan continuously</h3>
+            <p>Snyk monitors for vulns while you develop, using industry-leading <a href="#">security intelligence</a> .</p>
+        </div>
+        <div class="box w-30">
+            <img src="./image/fix.PNG" alt="" class="mb-4">
+            <h3 class="mb-3">Fix with a click</h3>
+            <p>Snyk provides actionable fix advice in your tools. With auto PRs, you can merge and move on.</p>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <section class="sec-middle d-flex  ">
+        <div class="text p-5    ">
+            <h1>Secure your entire development lifecycle</h1>
+            <p>Snyk supports your favourite languages and seamlessly integrates with your tools, pipelines, and workflows.</p>
+            <a href="#">Explore all integrations and languages <i class="fa fa-long-arrow-right"></i> </a>
+        </div>
+        <div class="php-java ">
+            <img src="./image/snyk-logos-grid.svg" alt="" class="java p-5">
+            
+        </div>
+
+    </section> -->
+
+    <div class="sec-mid-middle d-flex  mt-5">
+        <div class="svg-img">
+            <img src="./image/integrated_files/snyk-code-illustrated-ui.svg" alt="" class="p-4">
+        </div>
+
+        <div class="s-text p-5 ">
+            <h1 class="mt-2">We’re security experts so you don’t have to be</h1>
+            <p>The Snyk platform is powered by our industry-leading security intelligence research, so you can find and fix
+            vulnerabilities as soon as they’re discovered.</p>
+            <a href="#" class="mt-5">Explore the Snyk Vulnerability DB <i class="fa fa-long-arrow-right"></i> </a>
+        </div>
+    </div>
+
+    <div class="big-box">
+
+        <h2 class="mb-5">Ship on time <br>
+        with peace of mind</h2>
+
+
+
+            <div class="purple-box"></div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
 </body>
+
 </html>
+
+
