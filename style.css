@@ -4,10 +4,6 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  width: 100% !important;
-}
-
 header {
   height: 79px;
   align-items: center;
@@ -228,11 +224,11 @@ header .sign:hover {
   margin-left: 24%;
 }
 
-.img {
+.section-img {
   margin-top: 50px;
   align-content: center;
 }
-.img h2 {
+.section-img h2 {
   font-size: 18px;
   color: #21214c;
   font-weight: 700;
@@ -240,21 +236,21 @@ header .sign:hover {
   letter-spacing: 2px;
   text-align: center;
 }
-.img .logo-bar {
+.section-img .logo-bar {
   width: 90%;
   margin-top: 30px;
 }
-.img .logo-bar ul {
+.section-img .logo-bar ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-.img .logo-bar ul li {
+.section-img .logo-bar ul li {
   list-style: none;
   margin-left: 30px;
 }
-.img .logo-bar ul li img {
+.section-img .logo-bar ul li img {
   width: 100px;
 }
 
@@ -434,16 +430,14 @@ header .sign:hover {
     width: 80%;
   }
 }
-@media (max-width: 685px) {
-  .section-top {
+@media (max-width: 393px) {
+  .ection {
     flex-direction: column;
-    display: none !important;
-    min-width: 100% !important;
   }
-  .section-top .side-1 {
+  .ection .side-1 {
     width: 100% !important;
   }
-  .section-top .side-2 {
+  .ection .side-2 {
     width: 100% !important;
   }
 }
