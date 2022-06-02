@@ -1,162 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 header {
-    width: 100%;
-    height: 79px;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed !important;
-    top: 0px !important;
-    z-index: 1 !important;
+  height: 79px;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed !important;
+  top: 0px !important;
+  z-index: 1 !important;
+  width: 100%;
 }
-
 header img {
-    align-items: center;
-    height: 100px;
+  align-items: center;
+  height: 100px;
 }
-
 header .collapse {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
 header ul {
-    margin-top: 10px;
-    align-items: center;
-    justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-around;
 }
-
 header ul li {
-    list-style: none;
-    margin-right: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #4b4b6e;
+  list-style: none;
+  margin-right: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #4b4b6e;
 }
-
 header ul li .nav-link:hover {
-    padding: 10px;
-    background-color: #d8e2f5;
-    color: #145deb;
-    border-radius: 5px;
+  padding: 10px;
+  background-color: #d8e2f5;
+  color: #145deb;
+  border-radius: 5px;
 }
-
 header ul li .products {
-    min-height: 100px;
-    width: 650px;
-    justify-content: space-around;
+  min-height: 100px;
+  width: 650px;
+  justify-content: space-around;
 }
-
 header ul li .products .product {
-    line-height: 30px;
-    width: 50%;
-    height: fit-content;
+  line-height: 30px;
+  width: 50%;
+  height: fit-content;
 }
-
 header ul li .products .product img {
-    width: 25px;
-    height: 25px;
-    margin-top: 7px;
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
 }
-
 header ul li .products .product b {
-    color: #4b4b6e;
-    display: block;
+  color: #4b4b6e;
+  display: block;
 }
-
 header ul li .products .product p {
-    font-size: 15px;
-    color: #4b4b6e;
+  font-size: 15px;
+  color: #4b4b6e;
 }
-
 header ul li .products .platform {
-    width: 50%;
-    line-height: 30px;
+  width: 100px !important;
+  line-height: 30px;
 }
-
+header ul li .products .platform p {
+  width: 100px !important;
+}
 header ul li .resources {
-    min-height: 80px;
-    width: 550px;
-    justify-content: space-around;
+  min-height: 80px;
+  width: 550px;
+  justify-content: space-around;
 }
-
 header ul li .resources b {
-    color: #4b4b6e;
-    display: block;
+  color: #4b4b6e;
+  display: block;
 }
-
 header ul li .company {
-    width: 300px;
-    min-height: 80px;
-    display: block;
-    align-items: flex-start;
-    margin-bottom: 20px;
+  width: 300px;
+  min-height: 80px;
+  display: block;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
-
 header ul li .company div {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
 header ul li .company div a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-    color: #3c3c62;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  color: #3c3c62;
 }
-
 header ul li .company div a b {
-    color: white;
-    padding: 5px 10px;
-    background-color: purple;
-    border-radius: 20px;
-    margin-left: 10px;
+  color: white;
+  padding: 5px 10px;
+  background-color: purple;
+  border-radius: 20px;
+  margin-left: 10px;
 }
-
 header .login a {
-    text-decoration: none;
-    margin-left: 20px;
+  text-decoration: none;
+  margin-left: 20px;
 }
-
 header .login .log {
-    font-weight: 700;
-    font-size: 17px;
-    color: #3c3c62;
+  font-weight: 700;
+  font-size: 17px;
+  color: #3c3c62;
 }
-
 header .log:hover {
-    color: #5489f0;
+  color: #5489f0;
 }
-
 header .book {
-    padding: 10px 30px 10px 30px;
-    background-color: #e7eefd;
-    font-weight: 700;
-    font-size: 16px;
-    color: #145deb;
-    font-weight: 700;
-    font-size: 16px;
-    border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  background-color: #e7eefd;
+  font-weight: 700;
+  font-size: 16px;
+  color: #145deb;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
 }
-
 header .book:hover {
-    color: #1e1eb4;
+  color: #1e1eb4;
 }
-
 header .sign {
-    background-color: #145deb;
-    font-weight: 700;
-    font-size: 16px;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 30px 10px 30px;
+  background-color: #145deb;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
 }
-
 header .sign:hover {
-    background-color: #063dad;
-    color: white;
+  background-color: #063dad;
+  color: white;
 }
 
-.body{
-    height: 500px;
-    width: 100%;
-    background-color: green;
+.chat {
+  width: 50px;
+  height: 50px;
+  background-color: #4b46a9;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  color: white;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0px, 0px, 5px black;
 }
+
+.a-demo {
+  margin-top: 80px;
+  width: 100%;
+  min-height: 90px;
+  background-image: linear-gradient(to right, #7a3d95, #463890);
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+.a-demo img {
+  padding-left: 100px;
+}
+.a-demo .book-demo {
+  min-height: 90vh;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+.a-demo .book-demo .demo {
+  width: 50%;
+  min-height: 80vh;
+  margin-top: 70px;
+}
+.a-demo .book-demo .demo h1 {
+  color: white;
+  font-size: 66px;
+  font-weight: 600;
+  font-family: "poppins";
+}
+.a-demo .book-demo .demo p {
+  font-size: 28px;
+  line-height: 34px;
+  color: white;
+  width: 70%;
+  font-weight: 400;
+  text-align: left;
+}
+.a-demo .book-demo .demo .paragraph {
+  width: 60%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  line-height: 32px;
+}
+.a-demo .book-demo .form {
+  min-height: 80vh;
+  width: 50%;
+  margin-top: 50px;
+}
+.a-demo .book-demo .form input {
+  border-radius: 5px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.a-demo .book-demo .form .wid {
+  width: 60%;
+}
+.a-demo .book-demo .form .widt {
+  width: 60%;
+  height: 100px;
+  border-radius: 15px;
+}
+.a-demo .book-demo .form ::placeholder {
+  padding-left: 10px;
+}
+.a-demo .book-demo .form .btn {
+  width: 60%;
+  background-color: blue;
+}
+
+.first-section {
+  margin-bottom: 100px;
+}
+.first-section h2 {
+  width: 60%;
+  font-size: 34px;
+  line-height: 48px;
+  color: #121035;
+  font-weight: 400;
+  font-family: "poppins";
+  text-align: center;
+  margin: auto;
+}
+.first-section img {
+  width: 60%;
+}
+.first-section p {
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "poppins";
+}
+.first-section center {
+  margin-top: 40px;
+}
+.first-section center a {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: #145deb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.review {
+  background-image: url(./image/comic.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 100px;
+}
+.review center {
+  margin-top: 20px;
+}
+.review center h2 {
+  font-size: 34px;
+  line-height: 41px;
+  color: #121035;
+  font-weight: 600;
+  font-family: "poppins";
+}
+.review .customer-speach {
+  width: 100%;
+}
+.review .customer-speach .customers {
+  min-height: 300px;
+  margin-left: 30px;
+  width: 35%;
+  border-radius: 20px;
+}
+.review .customer-speach .customers .strong {
+  width: 50%;
+  padding: 30px;
+}
+.review .customer-speach .customers .strong strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #21214c;
+}
+.review .customer-speach .customers .strong p {
+  font-size: 16px;
+  color: #21214c;
+  font-weight: 400;
+}
+.review .customer-speach .customers .strong img {
+  width: 150px;
+  margin-top: 30px;
+}
+.review .customer-speach .customers img {
+  width: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 1120px) {
+  .navbar-collapse {
+    min-height: 500px !important;
+    margin-top: -28px;
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+  .navbar-collapse ul {
+    flex-direction: column;
+  }
+  .navbar-collapse ul li {
+    margin-bottom: 50px;
+  }
+  .navbar-collapse .login {
+    width: 100%;
+    display: block;
+  }
+  .navbar-collapse .login span {
+    margin-top: -290px !important;
+  }
+  .navbar-collapse .login .log {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 650px) {
+  .book-demo {
+    flex-direction: column;
+  }
+  .book-demo .demo {
+    width: 100% !important;
+  }
+  .book-demo .form {
+    width: 100% !important;
+  }
+}
+@media (max-width: 300px) {
+  .book-demo .demo h1 {
+    font-size: 34px !important;
+    margin-bottom: 20px !important;
+  }
+  .book-demo .demo .form .wid {
+    width: 100% !important;
+  }
+  .book-demo .demo .form .widt {
+    width: 100% !important;
+  }
+  .book-demo .demo .form .btn {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=demo.css.map */

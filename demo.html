@@ -15,12 +15,16 @@
         integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 </head>
 <body>
+    <div class="chat">
+        <i class="fa fa-comment-o" style="font-size:30px;"></i>
+    </div>
     <header class="navbar navbar-expand-xl bg-light">
-        <img src="./image/logo.png" alt="" class="">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <a href="./index.html">
+        <img src="./image/logo.png" alt="" class=""> </a>
+        <button class="navbar-toggler mr-5 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <div class="collapse navbar-collapse bg-light  " id="collapsibleNavbar">
     
             <ul class="d-flex">
                 <li class="nav-item dropdown ">
@@ -34,7 +38,7 @@
                                 <div class="d-flex "><img src="./image/open-source.svg" alt="">
                                     <div class="flex ml-3">
                                         <b>Snyk Open Source</b>
-                                        <p>Avoid Vulnerable dependencies</p>
+                                        <p >Avoid Vulnerable dependencies</p>
                                     </div>
                                 </div>
     
@@ -64,7 +68,7 @@
                                 <p>PLATFORM</p>
                                 <div class="w-50">
                                     <b>What is Snyk?</b>
-                                    <p>See Snyk's developer-first security platform in action</p>
+                                    <p style="width: 100px !important; ;">See Snyk's developer-first security   <br> platform in action</p>
                                 </div>
                                 <div>
                                     <b>Developers Security Platform</b>
@@ -128,14 +132,85 @@
     
             <div class="login">
                 <a href="./login.html" class="log">Log in</a>
+                <span>
                 <a href="#" class="book ">Book a demo</a>
                 <a href="./login.html" class="sign">Sign up</a>
+                </span>
             </div>
     
         </div>
     </header>
-    <div class="body">
-        
+    
+    <div class="a-demo">
+        <div class="book-demo d-flex align-item-center justify-content-center">
+            <div class="demo pl-5">
+                <h1 class="text-light ">Book a demo</h1>
+                <p>Secure code, open source libraries, containers, and infrastructure as code throughout your SDLC</p>
+
+                <p class="paragraph mt-5"><i class="fa fa-quote-left"></i> <br> Snyk fits so naturally into the DevOps culture and processes. Snyk is DevOps-friendly and has spread from the bottom up
+                throughout our organization. <i class="fa fa-quote-right"></i></p>
+
+                
+            </div>
+           <div class="form p-5">
+            <input type="text" placeholder="First Name *">
+            <input type="text" placeholder="Last Name *"> <br>
+            <input type="text"class="wid" placeholder="Business Email *"><br>
+            <input type="text"class="wid" placeholder="Job Title *"><br>
+            <input type="select" class="wid" placeholder="Country *"><br>
+            <input type="text" class="wid" placeholder="Company Name *"><br>
+            <input type="text" class="wid"placeholder="Phone Number *"><br>
+            <input type="text" class="widt"placeholder="Tell us more about how we can help you..."><br>
+            <button class="btn mt-4 text-light type="button"> Let's talk</button>
+
+           </div>
+        </div>
+        <img src="./image/telstra.svg" alt="" class="pb-5 pt-5 d-none">
+    </div>
+
+    <div class="first-section mt-5 width-100 ">
+
+        <h2><b>Securing open source and containers</b> throughout your modern development process</h2>
+
+        <center><img src="./image/mockup.png" alt="" class="pt-5 "> </center>
+
+        <p>Test your running environment to verify there is no exposure to existing vulnerabilities and monitor for newly disclosed
+        vulnerabilities.</p>
+
+        <center><a href="#" class="book ">Book a demo</a> </center>
+    </div>
+
+    <div class="review mt-5">
+        <center><h2>Hear from our customers</h2></center>
+
+        <div class="customer-speach d-flex align-item-center justify-content-center mt-5">
+              <div class="customers d-flex ">
+                  <div class="strong  ">
+                      <strong > Alex Harriss </strong>
+                      <p class="mt-2">Security Engineer</p>
+                      <p class="mt-4">Snyk is one of the most important security tools we use at Skyscanner
+                          
+                      </p>
+                    <img src="./image/skyscanner.svg" alt="">
+                  </div>
+
+                  <img src="./image/alex.jpg" alt="" style="width: 250px; height:300px">
+              </div>
+
+
+                <div class="customers d-flex ">
+                    <div class="strong  ">
+                        <strong> Stuart Larsen </strong>
+                        <p class="mt-2">Security Engineer</p>
+                        <p class="mt-4">We want solution that enable developers to make informed security decisions.
+                            
+                        </p>
+                        <img src="./image/mongodb-logo.png" alt="">
+                    </div>
+                
+                    <img src="./image/stuart-larsen-mongodb.png" alt="" style="width: 250px; height:300px">
+                </div>
+        </div>
     </div>
 </body>
 </html>
