@@ -5,6 +5,7 @@ body, html {
 
 .body {
   display: flex;
+  width: 100% !important;
 }
 
 a {
@@ -13,11 +14,12 @@ a {
 
 .linear {
   width: 40%;
-  max-height: 650px;
+  min-height: 350px;
   background-image: linear-gradient(to right, #7a3d95, #463890);
   padding-top: 5px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 50px;
 }
 .linear img {
   width: 120px;
@@ -32,6 +34,7 @@ a {
   height: 100px;
   width: 20%;
   margin-top: 10px;
+  padding-right: 20px;
 }
 .linear .fafa i {
   margin-bottom: 60px;
@@ -42,14 +45,16 @@ a {
   border-radius: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 80px;
   justify-content: center;
 }
 .linear h2 {
   color: #a99ac7;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 50px;
-  margin-left: -15px;
+  margin-bottom: 60px;
+  margin-left: -5px;
+  margin-top: 10px;
 }
 
 .aside {
@@ -142,7 +147,8 @@ a {
 
 footer {
   background-color: #211f47;
-  padding: 0px 34px;
+  max-height: 130px;
+  width: 100% !important;
 }
 footer h4 {
   text-align: center;
@@ -151,18 +157,33 @@ footer h4 {
 }
 footer img {
   margin-top: 30px;
-  margin-left: 40px;
   text-align: center;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
+  footer {
+    height: 200px;
+  }
+  footer img {
+    width: 1000px;
+  }
+
+  .body {
+    height: 900px;
+  }
+  .body .linear .display {
+    max-height: 150px;
+    width: 110%;
+  }
+}
+@media (max-width: 990px) {
   .body {
     display: block;
   }
 
   .linear {
-    width: 100%;
-    height: 180px;
+    width: 100% !important;
+    height: 10px !important;
     padding-left: 40px;
     background-image: linear-gradient(to right, #7a3d95, #463890);
   }
@@ -185,9 +206,9 @@ footer img {
   }
   .aside .bottom h1 {
     color: #4b46a9;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 600;
     width: 80%;
     margin: auto;
   }
@@ -213,12 +234,13 @@ footer img {
   .aside .bottom .text {
     height: 100px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: -50px;
     text-align: left;
   }
   .aside .bottom .text h2 {
     color: #a99ac7;
-    font-size: 20px;
+    font-size: 29px;
     line-height: 32px;
     margin-top: 40px;
   }
@@ -244,6 +266,10 @@ footer img {
   }
   .aside .bottom {
     display: inherit;
+  }
+
+  .footer {
+    display: none;
   }
 }
 

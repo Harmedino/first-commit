@@ -6,18 +6,19 @@ body, html{
 }
 .body{
     display: flex;
+    width: 100% !important;
 }
 a{
     text-decoration: none;
 }
 .linear {
     width: 40%;
-    max-height: 650px;
+    min-height: 350px;
     background-image: linear-gradient(to right, #7a3d95, #463890);
     padding-top: 5px;
     padding-left: 50px;
     padding-right: 50px;
-    
+    padding-bottom: 50px;
     img {
         width: 120px;
         height: 100px;
@@ -33,7 +34,7 @@ a{
         height: 100px;
         width: 20%;
         margin-top: 10px;
-
+        padding-right: 20px;
         i {
             margin-bottom: 60px;
             color: white;
@@ -43,6 +44,7 @@ a{
             border-radius: 100%;
             display: flex;
             align-items: center;
+            margin-bottom: 80px;
             justify-content: center;
         }
 
@@ -52,8 +54,10 @@ a{
         color: #a99ac7;
         font-size: 24px;
         line-height: 32px;
-        margin-bottom: 50px;
-        margin-left: -15px;
+        margin-bottom: 60px;
+        margin-left: -5px;
+        margin-top: 10px;
+            
     }
 
 }
@@ -159,8 +163,8 @@ a{
 
 footer {
     background-color: #211f47;
-    padding: 0px 34px;
-
+    max-height: 130px;
+    width: 100% !important;
     h4 {
        
         text-align: center;
@@ -170,19 +174,43 @@ footer {
 
     img {
         margin-top: 30px;
-        margin-left: 40px;
         text-align: center;
 
     }
 }
 
-@media(max-width:960px) {
+@media(max-width:1200px){
+    footer{
+        height: 200px;
+        img{
+            width: 1000px;
+        }
+    }
+    .body{
+        height: 900px;
+        .linear{
+            .display{
+                max-height: 150px;
+                width: 110%;
+            }
+          .text{
+              
+          }
+        }
+        .aside{
+           
+        }
+    }
+}
+
+
+@media(max-width:990px) {
     .body{
         display: block ;
     }
    .linear{
-        width: 100%;
-            height: 180px;
+        width: 100% !important;
+            height: 10px !important;
             padding-left: 40px;
             background-image: linear-gradient(to right, #7a3d95, #463890);
             
@@ -205,9 +233,9 @@ footer {
     
             h1 {
                 color: #4b46a9;
-                font-size: 20px;
+                font-size: 24px;
                 line-height: 32px;
-                font-weight: 500;
+                font-weight: 600;
                 width: 80%;
                 margin: auto;
             }
@@ -237,14 +265,16 @@ footer {
             .text{
                 height: 100px;
                     width: 100%;
-                    margin-top: 40px;
+                    margin-top: 50px;
+                    margin-left: -50px;
                     text-align: left;
+                    
                 h2 {
                         color: #a99ac7;
-                        font-size: 20px;
+                        font-size: 29px;
                         line-height: 32px;
                         margin-top: 40px;
-                
+                    
                     }
             }
     
@@ -276,5 +306,7 @@ footer {
                     display: inherit;
                 }
 }
-
+        .footer{
+        display: none;
+    }
 }

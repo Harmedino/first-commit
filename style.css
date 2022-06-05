@@ -605,6 +605,53 @@ header .sign:hover {
   width: 43%;
 }
 
+footer {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #21214c;
+  margin-top: 100px;
+}
+footer .footer-brand .links-box {
+  margin-left: -149px;
+}
+footer .footer-brand .sign-up {
+  margin-left: 80px;
+  padding: 15px;
+  background-color: #145deb;
+  font-family: 700;
+  font-family: "poppins";
+  color: white;
+  border-radius: 5px;
+}
+footer .menu-col {
+  width: 165px;
+}
+footer ul li {
+  list-style: none;
+  color: white;
+  text-align: left;
+  margin-left: -30px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+footer .soc-top {
+  margin-bottom: -10px;
+}
+footer .soc li {
+  list-style: none;
+}
+footer .soc li i {
+  color: white;
+  font-size: 30px;
+  padding: 0px 30px;
+}
+footer .limited {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
 @media (max-width: 1180px) {
   .sec-mid-middle {
     width: 100% !important;
@@ -798,6 +845,31 @@ header .sign:hover {
   }
   .sec-mid-middle .s-text h1 {
     font-size: 38px;
+  }
+}
+@media (max-width: 1199px) {
+  .navbar-collapse {
+    min-height: 500px !important;
+    margin-top: -28px;
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+  .navbar-collapse ul {
+    flex-direction: column;
+  }
+  .navbar-collapse ul li {
+    margin-bottom: 50px;
+  }
+  .navbar-collapse .login {
+    width: 100%;
+    display: block;
+  }
+  .navbar-collapse .login span {
+    margin-top: -290px !important;
+  }
+  .navbar-collapse .login .log {
+    display: flex;
+    align-items: flex-end;
   }
 }
 @media (max-width: 789px) {

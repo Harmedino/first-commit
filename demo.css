@@ -230,8 +230,6 @@ header .sign:hover {
   color: #121035;
   font-weight: 400;
   font-family: "poppins";
-  text-align: center;
-  margin: auto;
 }
 .first-section img {
   width: 60%;
@@ -279,17 +277,18 @@ header .sign:hover {
   font-family: "poppins";
 }
 .review .customer-speach {
-  width: 100%;
+  width: 100% !important;
 }
 .review .customer-speach .customers {
   min-height: 300px;
   margin-left: 30px;
-  width: 35%;
+  width: 40%;
   border-radius: 20px;
 }
 .review .customer-speach .customers .strong {
   width: 50%;
   padding: 30px;
+  max-height: 300px;
 }
 .review .customer-speach .customers .strong strong {
   font-size: 16px;
@@ -302,7 +301,6 @@ header .sign:hover {
   font-weight: 400;
 }
 .review .customer-speach .customers .strong img {
-  width: 150px;
   margin-top: 30px;
 }
 .review .customer-speach .customers img {
@@ -311,7 +309,243 @@ header .sign:hover {
   border-bottom-right-radius: 20px;
 }
 
-@media (max-width: 1120px) {
+.carousel {
+  display: none;
+}
+
+.integration {
+  width: 100%;
+  min-height: 700px;
+  margin-bottom: 100px;
+}
+.integration .image-line:hover {
+  border: 2px solid rgb(226, 200, 53);
+}
+.integration h2 {
+  width: 60%;
+  font-size: 34px;
+  line-height: 48px;
+  color: #121035;
+  font-weight: 700;
+  font-family: "poppins";
+}
+.integration .line-3 {
+  height: 520px;
+  width: 100px;
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: -40px;
+}
+.integration .line-3 .image-line {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.integration .line-3 .image-line img {
+  width: 40px;
+  height: 40px;
+}
+.integration .line-3 .down {
+  margin-top: 20px;
+}
+.integration .line-3 .down p {
+  color: #202042;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins";
+  text-align: center;
+  height: 30px;
+  width: 100px;
+}
+.integration .line-3 .image-icon {
+  width: 55px;
+  height: 55px;
+  border: 1px solid rgb(54, 30, 48);
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.integration .line-3 .image-icon img {
+  width: 25px;
+  height: 20px;
+}
+.integration .line-4 {
+  height: 320px;
+  width: 90px;
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 230px;
+}
+.integration .line-4 .image-line {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.integration .line-4 .image-line img {
+  width: 40px;
+  height: 40px;
+}
+.integration .line-4 .down {
+  margin-top: 20px;
+}
+.integration .line-4 .down p {
+  color: #202042;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins";
+  text-align: center;
+  height: 30px;
+  width: 100px;
+}
+.integration .line-4 .image-icon {
+  width: 55px;
+  height: 55px;
+  border: 1px solid rgb(54, 30, 48);
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.integration .line-4 .image-icon img {
+  width: 25px;
+  height: 20px;
+}
+.integration .line {
+  height: 470px;
+  width: 100px;
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+.integration .line .image-line {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.integration .line .image-line img {
+  width: 40px;
+  height: 40px;
+}
+.integration .line .down {
+  margin-top: 20px;
+}
+.integration .line .down p {
+  color: #202042;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "poppins";
+  text-align: center;
+  height: 30px;
+  width: 100px;
+}
+.integration .line .image-icon {
+  width: 55px;
+  height: 55px;
+  border: 1px solid rgb(54, 30, 48);
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.integration .line .image-icon img {
+  width: 25px;
+  height: 20px;
+}
+
+.ready {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to right, #7a3d95, #463890);
+  border-radius: 10px;
+  margin-top: 150px;
+}
+.ready center h3 {
+  padding-top: 70px;
+  font-size: 46px;
+}
+.ready center a {
+  text-decoration: none;
+  padding: 15px;
+  background-color: #145deb;
+  font-family: 700;
+  font-family: "poppins";
+  color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+footer {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #21214c;
+}
+footer .footer-brand .links-box {
+  margin-left: -149px;
+}
+footer .footer-brand .sign-up {
+  margin-left: 80px;
+  padding: 15px;
+  background-color: #145deb;
+  font-family: 700;
+  font-family: "poppins";
+  color: white;
+  border-radius: 5px;
+}
+footer .menu-col {
+  width: 165px;
+}
+footer ul li {
+  list-style: none;
+  color: white;
+  text-align: left;
+  margin-left: -30px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+footer .soc-top {
+  margin-bottom: -10px;
+}
+footer .soc li {
+  list-style: none;
+}
+footer .soc li i {
+  color: white;
+  font-size: 30px;
+  padding: 0px 30px;
+}
+footer .limited {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+@media (max-width: 1199px) {
   .navbar-collapse {
     min-height: 500px !important;
     margin-top: -28px;
@@ -334,6 +568,35 @@ header .sign:hover {
   .navbar-collapse .login .log {
     display: flex;
     align-items: flex-end;
+  }
+}
+@media (max-width: 1140px) {
+  .review .customer-speach {
+    width: 100% !important;
+  }
+  .review .customer-speach .customers {
+    width: 50% !important;
+    margin-left: 1px !important;
+  }
+  .review .customer-speach .customers .strong {
+    padding: 5px;
+  }
+}
+@media (max-width: 750px) {
+  .review {
+    display: none;
+  }
+
+  .carousel {
+    display: inherit !important;
+    width: 100%;
+  }
+  .carousel .customer-speach .customers {
+    width: 100% !important;
+    margin-left: 30px !important;
+  }
+  .carousel .customer-speach .customers .strong {
+    padding: 15px;
   }
 }
 @media (max-width: 650px) {
