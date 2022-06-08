@@ -242,7 +242,7 @@ header {
     .boxes{
       padding-top: 65px;
       .box-2{
-          height: 650px;
+         min-height: 650px;
         z-index: 5;
             width: 270px;
             background-color: white;
@@ -375,7 +375,7 @@ header {
             }
       }
       .box-3{
-          height: 700px;
+          min-height: 700px;
         z-index: 5;
             width: 270px;
             background-color: white;
@@ -643,7 +643,7 @@ header {
         .box{
             z-index: 5;
             width: 270px;
-            height: 550px;
+           min-height: 550px;
             background-color: white;
             box-shadow: 0px 0px 1px rgb(112, 112, 112);
             border-radius: 10px;
@@ -799,13 +799,14 @@ header {
                 font-size: 18px;
                 background-color: #edf1f9;
                 width: 100% !important;
-                padding: 20px 20px;
+                padding: 15px 20px;
                 font-weight: 600;
                 border-radius: 10px;
             }
             .header-2{
                 width: 100%;
                 height: 30px;
+                margin-bottom: 100px;
                 p{
                     width: 28%;
                     text-align: left;
@@ -820,9 +821,11 @@ header {
                  color: #0a26b8;
              }
                 }
+                .alig{
+                    width: 80%;
                 .comp{
                     text-align: center;
-                    width: 18%;
+                    width: 30%;
                     .fa-check{
                         color: #6cc3b7;
                     }
@@ -836,7 +839,7 @@ header {
                 }
                                 .reg{
                                     margin-top: 200px;
-                                }
+                                }}
             }
         }
         .question{
@@ -846,6 +849,8 @@ header {
             margin-bottom: 100px;
             h1{
                 padding-top: 50px;
+                padding-left: 3px;
+                padding-right: 3px;
                 color: #21214c;
                 font-size: 40px;
                 font-weight: 700;
@@ -1069,10 +1074,29 @@ footer {
     @media(max-width:600px){
         .feat{
             .header-2 {
-                    margin: 0px;
+                    margin-bottom: 100px;
                     padding: 0px;
-             
-            
+            //  border: 2px solid red;
+            min-height: 30px;
+            flex-direction: column;
+            p{
+                width: 100% !important;
+                text-align: center;
+                padding: 0px;
+                min-height: 30px;
+                margin-top: 15px;
+                margin-bottom: 50px;
+                font-size: 14px;
+            }
+            .alig{
+                margin-top: -50px;
+                width: 100% !important;
+                .comp{
+                    width: 25% !important;
+                    // 
+                    height: 50px;
+                }
+            }
                  
                 }
         }
@@ -1103,6 +1127,26 @@ footer {
             }
         }
 }
+@media(max-width:430px){
+    .boxes{
+        width: 100% !important;
+        padding: 0px;
+    .box-2 {
+            width: 100% !important;
+        }
+    
+        .box-3 {
+            width: 100% !important;
+        }
+    
+        .box-4 {
+            width: 100% !important;
+        }
+    
+        .box {
+            width: 100% !important;
+        }
+}}
 @media(max-width:400px){
     footer{
         .footer-brand{
