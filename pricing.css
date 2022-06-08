@@ -207,7 +207,7 @@ header .sign:hover {
   padding-top: 65px;
 }
 .body .mask-container .boxes .box-2 {
-  height: 650px;
+  min-height: 650px;
   z-index: 5;
   width: 270px;
   background-color: white;
@@ -316,7 +316,7 @@ header .sign:hover {
   margin-top: 140px;
 }
 .body .mask-container .boxes .box-3 {
-  height: 700px;
+  min-height: 700px;
   z-index: 5;
   width: 270px;
   background-color: white;
@@ -537,7 +537,7 @@ header .sign:hover {
 .body .mask-container .boxes .box {
   z-index: 5;
   width: 270px;
-  height: 550px;
+  min-height: 550px;
   background-color: white;
   box-shadow: 0px 0px 1px rgb(112, 112, 112);
   border-radius: 10px;
@@ -682,13 +682,14 @@ header .sign:hover {
   font-size: 18px;
   background-color: #edf1f9;
   width: 100% !important;
-  padding: 20px 20px;
+  padding: 15px 20px;
   font-weight: 600;
   border-radius: 10px;
 }
 .body .feat .header-2 {
   width: 100%;
   height: 30px;
+  margin-bottom: 100px;
 }
 .body .feat .header-2 p {
   width: 28%;
@@ -704,21 +705,24 @@ header .sign:hover {
 .body .feat .header-2 p strong {
   color: #0a26b8;
 }
-.body .feat .header-2 .comp {
-  text-align: center;
-  width: 18%;
+.body .feat .header-2 .alig {
+  width: 80%;
 }
-.body .feat .header-2 .comp .fa-check {
+.body .feat .header-2 .alig .comp {
+  text-align: center;
+  width: 30%;
+}
+.body .feat .header-2 .alig .comp .fa-check {
   color: #6cc3b7;
 }
-.body .feat .header-2 .comp .fa-minus {
+.body .feat .header-2 .alig .comp .fa-minus {
   color: #6d6d9c;
   font-weight: 100;
 }
-.body .feat .header-2 .comp h4 {
+.body .feat .header-2 .alig .comp h4 {
   display: none;
 }
-.body .feat .header-2 .reg {
+.body .feat .header-2 .alig .reg {
   margin-top: 200px;
 }
 .body .question {
@@ -729,6 +733,8 @@ header .sign:hover {
 }
 .body .question h1 {
   padding-top: 50px;
+  padding-left: 3px;
+  padding-right: 3px;
   color: #21214c;
   font-size: 40px;
   font-weight: 700;
@@ -910,8 +916,27 @@ footer .limited {
 }
 @media (max-width: 600px) {
   .feat .header-2 {
-    margin: 0px;
+    margin-bottom: 100px;
     padding: 0px;
+    min-height: 30px;
+    flex-direction: column;
+  }
+  .feat .header-2 p {
+    width: 100% !important;
+    text-align: center;
+    padding: 0px;
+    min-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+  .feat .header-2 .alig {
+    margin-top: -50px;
+    width: 100% !important;
+  }
+  .feat .header-2 .alig .comp {
+    width: 25% !important;
+    height: 50px;
   }
 }
 @media (max-width: 580px) {
@@ -934,6 +959,24 @@ footer .limited {
   }
   footer .footer-brand .links-box .sign-up {
     margin-left: 0px;
+  }
+}
+@media (max-width: 430px) {
+  .boxes {
+    width: 100% !important;
+    padding: 0px;
+  }
+  .boxes .box-2 {
+    width: 100% !important;
+  }
+  .boxes .box-3 {
+    width: 100% !important;
+  }
+  .boxes .box-4 {
+    width: 100% !important;
+  }
+  .boxes .box {
+    width: 100% !important;
   }
 }
 @media (max-width: 400px) {
