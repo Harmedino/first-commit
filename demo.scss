@@ -69,13 +69,20 @@ header {
                     }
                 }
 
-                .platform {
-                    width: 100px !important;
-                    line-height: 30px;
-                    p{
-                        width: 100px !important;
-                    }
-                }
+                                .platform {
+                                    width: 50%;
+                                    line-height: 30px;
+                
+                                    b {
+                                        color: #4b4b6e;
+                                        display: block;
+                                    }
+                
+                                    p {
+                                        font-size: 15px;
+                                        color: #4b4b6e;
+                                    }
+                                }
 
 
             }
@@ -244,13 +251,10 @@ header {
                                  }
                                  .widt{
                                      width: 60%;
-                                     height: 100px;
+                                     padding-bottom: 60px;
                                      border-radius: 15px;
                                  }
-                                 ::placeholder{
-                                     padding-left: 10px;
-                                     
-                                 }
+                             
                                  .btn{
                                      width: 60%;
                                      background-color: blue;
@@ -699,6 +703,36 @@ footer{
             width: 100% !important;
         }
     } 
+}
+@media(max-width:500px){
+        footer {
+                .footer-brand {
+                    flex-direction: column;
+        
+                    .links-box {
+                        margin-top: 30px;
+                        margin-left: 10px;
+        
+                        .sign-up {
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+}
+@media(max-width:400px){
+    footer {
+            .footer-brand {
+                .links-box {
+                    a {
+                        display: block;
+                        margin-top: 10px;
+                        text-align: center;
+                    }
+    
+                }
+            }
+        }
 }
 @media(max-width:300px){
     .book-demo{

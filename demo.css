@@ -59,11 +59,16 @@ header ul li .products .product p {
   color: #4b4b6e;
 }
 header ul li .products .platform {
-  width: 100px !important;
+  width: 50%;
   line-height: 30px;
 }
+header ul li .products .platform b {
+  color: #4b4b6e;
+  display: block;
+}
 header ul li .products .platform p {
-  width: 100px !important;
+  font-size: 15px;
+  color: #4b4b6e;
 }
 header ul li .resources {
   min-height: 80px;
@@ -209,11 +214,8 @@ header .sign:hover {
 }
 .a-demo .book-demo .form .widt {
   width: 60%;
-  height: 100px;
+  padding-bottom: 60px;
   border-radius: 15px;
-}
-.a-demo .book-demo .form ::placeholder {
-  padding-left: 10px;
 }
 .a-demo .book-demo .form .btn {
   width: 60%;
@@ -608,6 +610,25 @@ footer .limited {
   }
   .book-demo .form {
     width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-brand {
+    flex-direction: column;
+  }
+  footer .footer-brand .links-box {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  footer .footer-brand .links-box .sign-up {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 400px) {
+  footer .footer-brand .links-box a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
   }
 }
 @media (max-width: 300px) {
