@@ -207,7 +207,7 @@ header .sign:hover {
   padding-top: 65px;
 }
 .body .mask-container .boxes .box-2 {
-  height: 600px;
+  height: 650px;
   z-index: 5;
   width: 270px;
   background-color: white;
@@ -812,7 +812,7 @@ footer .limited {
 @media (max-width: 1199px) {
   .navbar-collapse {
     min-height: 500px !important;
-    margin-top: -28px;
+    margin-top: -30px;
     align-items: flex-start !important;
     flex-direction: column;
     background-color: white;
@@ -822,17 +822,23 @@ footer .limited {
   }
   .navbar-collapse ul li {
     margin-bottom: 50px;
+    font-size: 20px;
   }
   .navbar-collapse .login {
     width: 100%;
-    display: block;
+    flex-direction: column-reverse;
   }
-  .navbar-collapse .login span {
-    margin-top: -290px !important;
+  .navbar-collapse .login div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -250px !important;
   }
   .navbar-collapse .login .log {
-    display: flex;
-    align-items: flex-end;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 950px) {
