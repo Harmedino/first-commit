@@ -622,7 +622,7 @@ footer{
 @media (max-width:1199px){
 .navbar-collapse {
         min-height: 500px !important;
-        margin-top: -28px;
+        margin-top: -30px;
         align-items: flex-start !important;
         flex-direction: column;
 
@@ -631,6 +631,7 @@ footer{
 
             li {
                 margin-bottom: 50px;
+                font-size: 20px;
             }
         }
 
@@ -638,15 +639,19 @@ footer{
 
         .login {
             width: 100%;
-            display: block;
+            flex-direction: column-reverse;
 
-            span {
-                margin-top: -290px !important;
+            div {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -250px !important;
             }
 
-            .log {
-                display: flex;
-                align-items: flex-end;
+            .log {margin-top: 40px;
+                width: 100%;
+                text-align: center;
             }
         }
     }
@@ -691,6 +696,14 @@ footer{
                     }
                 }
         }
+        // .integration{
+        //     .line-body{
+        //         flex-direction: column;
+        //         .break{
+        //             width: 100%;
+        //         }
+        //     }
+        // }
 }
 @media(max-width:650px){
     .book-demo{
