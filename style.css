@@ -336,7 +336,6 @@ header .sign:hover {
 }
 .sec-mid .text {
   width: 45%;
-  border: 1px solid red;
   height: 500px;
   padding: 30px;
   display: flex;
@@ -354,7 +353,6 @@ header .sign:hover {
 }
 .sec-mid .php-java {
   width: 45%;
-  border: 1px solid green;
   height: 500px;
 }
 .sec-mid .php-java .java {
