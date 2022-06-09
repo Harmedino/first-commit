@@ -11,7 +11,7 @@ header {
   justify-content: space-around;
   position: fixed !important;
   top: 0px !important;
-  z-index: 1 !important;
+  z-index: 55 !important;
 }
 header img {
   align-items: center;
@@ -154,7 +154,7 @@ header .sign:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 55;
   color: white;
   bottom: 20px;
   right: 20px;
@@ -224,9 +224,10 @@ header .sign:hover {
 }
 .section .side-2 {
   min-height: 600px;
-  width: 40%;
+  width: 50%;
   align-items: flex-end;
   position: relative;
+  overflow: hidden;
 }
 .section .side-2 .sparkles {
   width: 150px;
@@ -238,15 +239,21 @@ header .sign:hover {
 .section .side-2 video {
   position: absolute;
   right: 0px;
-  left: 100px;
-  top: 0px;
+  left: 90px;
+  top: 20px;
 }
 
-.section-btom .patch-alert {
+.patch {
+  position: relative;
+  margin-bottom: 190px;
+}
+.patch .section-btom .patch-alert {
   width: 500px;
   height: 400px;
-  margin-top: -300px;
-  margin-left: 32%;
+  position: absolute;
+  z-index: 33;
+  left: 28%;
+  top: -180px;
 }
 
 .section-img {
@@ -290,7 +297,7 @@ header .sign:hover {
   font-weight: bolder;
   text-align: center;
   line-height: 48px;
-  width: 60% !important;
+  width: 80% !important;
   font-family: "poppins";
   margin-top: 100px;
 }
@@ -419,7 +426,7 @@ header .sign:hover {
   text-align: center;
   line-height: 48px;
   font-family: "poppins";
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 .big-box .purple-box {
@@ -530,7 +537,7 @@ header .sign:hover {
   text-align: center;
   line-height: 48px;
   font-family: "poppins";
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 .loved .what-is {
@@ -695,6 +702,14 @@ footer .limited {
     margin-bottom: 50px;
     font-size: 20px;
   }
+  .navbar-collapse .patch .section-btom .patch-alert {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    z-index: 33;
+    left: 30%;
+    top: -180px;
+  }
   .navbar-collapse .login {
     width: 100%;
     flex-direction: column-reverse;
@@ -725,10 +740,9 @@ footer .limited {
     margin-left: 65%;
   }
   .section .side-2 video {
+    width: 550px !important;
     position: absolute;
-    right: 0px;
-    left: 100px;
-    top: -30px;
+    top: -50px;
   }
 
   .sec-mid .text {
@@ -879,10 +893,24 @@ footer .limited {
   }
   .section .side-2 video {
     position: absolute;
-    right: 0px;
-    left: 50px;
+    right: -100px;
+    left: 100px;
     top: 0px;
-    width: 90%;
+    width: 600px !important;
+  }
+
+  .patch {
+    position: relative;
+    margin-bottom: 190px;
+    width: 100% !important;
+  }
+  .patch .section-btom .patch-alert {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    z-index: 33;
+    left: 500px;
+    top: -180px;
   }
 
   .loved .reddit .panther {
@@ -933,12 +961,26 @@ footer .limited {
     font-family: "poppins";
     line-height: 64px !important;
   }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 50px;
+    top: 0px;
+    width: 550px !important;
+  }
 
-  .patch .patch-alert {
-    width: 120px;
-    height: 120px;
-    margin-left: 60%;
-    z-index: 1;
+  .patch {
+    position: relative;
+    margin-bottom: 190px;
+    width: 100% !important;
+  }
+  .patch .section-btom .patch-alert {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: 33;
+    left: 400px;
+    top: -180px;
   }
 
   .section-middle {
@@ -1096,8 +1138,95 @@ footer .limited {
     padding: 10px;
     margin-top: 50px !important;
   }
+
+  .patch {
+    position: relative;
+    margin-bottom: 190px;
+    width: 100% !important;
+  }
+  .patch .section-btom .patch-alert {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: 33;
+    left: 300px;
+    top: -180px;
+  }
+
+  .section .side-2 {
+    margin-top: -30px;
+  }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 50px;
+    top: -20px;
+    width: 500px !important;
+  }
+}
+@media (max-width: 588px) {
+  .patch {
+    position: relative;
+    margin-bottom: 190px;
+    width: 100% !important;
+  }
+  .patch .section-btom .patch-alert {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    z-index: 33;
+    left: 300px;
+    top: -180px;
+  }
+
+  .section .side-2 {
+    margin-top: -30px;
+  }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 50px;
+    top: -20px;
+    width: 500px !important;
+  }
+
+  .sec-mid .php-java .java {
+    margin-left: -20px;
+  }
 }
 @media (max-width: 540px) {
+  .patch {
+    position: relative;
+    margin-bottom: 190px;
+    width: 100% !important;
+  }
+  .patch .section-btom .patch-alert {
+    width: 230px;
+    height: 200px;
+    position: absolute;
+    z-index: 33;
+    left: 250px;
+    top: -180px;
+  }
+
+  .section .side-2 {
+    margin-top: -30px;
+  }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 30px;
+    top: -20px;
+    width: 450px !important;
+  }
+
+  .sec-mid-middle .svg-img {
+    padding: 0px;
+  }
+  .sec-mid-middle .svg-img .illustrated {
+    margin-left: -30px !important;
+  }
+
   .sec-mid .php-java .java {
     width: 460px !important;
     height: 460px !important;
@@ -1157,6 +1286,26 @@ footer .limited {
   }
 }
 @media (max-width: 450px) {
+  .patch .section-btom .patch-alert {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 33;
+    left: 250px;
+    top: -180px;
+  }
+
+  .section .side-2 {
+    margin-top: -30px;
+  }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 20px;
+    top: -20px;
+    width: 400px !important;
+  }
+
   .box-top {
     min-width: 300px;
     height: 300px;
@@ -1164,23 +1313,33 @@ footer .limited {
   }
 }
 @media (max-width: 428px) {
-  .section {
-    flex-direction: column;
-  }
   .section .side-2 {
     margin-top: -10px;
     max-height: 700px;
     margin-bottom: -150px;
   }
   .section .side-2 .sparkles {
-    margin-left: 45% !important;
+    margin-left: 50% !important;
+  }
+
+  .section .side-2 {
+    margin-top: -30px;
   }
   .section .side-2 video {
     position: absolute;
-    right: 0px;
-    left: 25px !important;
-    top: -130px;
-    width: 90%;
+    right: -100px;
+    left: 20px;
+    top: -150px;
+    width: 300px !important;
+  }
+
+  .patch .section-btom .patch-alert {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    z-index: 33;
+    left: 200px;
+    top: -180px;
   }
 
   .sec-mid .php-java {
@@ -1193,10 +1352,10 @@ footer .limited {
   }
 
   .sec-mid-middle .svg-img {
-    margin-top: -59px;
+    margin-top: -79px;
   }
   .sec-mid-middle .svg-img .illustrated {
-    width: 380px !important;
+    width: 400px !important;
   }
 }
 @media (max-width: 400px) {
@@ -1217,10 +1376,25 @@ footer .limited {
   .section .side-1 h1 {
     font-size: 30px !important;
   }
+  .section .side-2 .sparkles {
+    margin-left: 40% !important;
+  }
   .section .side-2 {
-    margin-top: -10px;
-    max-height: 700px;
-    margin-bottom: -150px;
+    margin-top: -30px;
+  }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 20px;
+    top: -150px !important;
+    width: 300px !important;
+  }
+
+  .patch {
+    display: none;
+  }
+  .patch .section-btom .patch-alert {
+    display: none;
   }
 
   .sec-mid {
@@ -1230,8 +1404,16 @@ footer .limited {
     margin-top: 40px;
   }
   .sec-mid .php-java .java {
-    width: 260px !important;
-    height: 260px !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .last-section {
+    flex-direction: column;
+  }
+  .last-section .last {
+    width: 100%;
+    padding: 10px;
   }
 
   .section-middle h1 {
@@ -1254,25 +1436,41 @@ footer .limited {
   }
 
   .sec-mid-middle .svg-img .illustrated {
-    width: 290px;
-    padding-left: -40px !important;
+    width: 350px !important;
   }
 }
-@media (max-width: 321px) {
-  .sec-mid-middle .svg-img .illustrated {
-    width: 250px;
+@media (max-width: 327px) {
+  .section .side-2 {
+    margin-top: -30px;
+  }
+  .section .side-2 video {
+    position: absolute;
+    right: -100px;
+    left: 15px;
+    top: -150px;
+    width: 270px !important;
   }
 
-  .purple-box .box-bottom {
-    width: 230px !important;
+  .patch .section-btom .patch-alert {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    z-index: 33;
+    left: 200px;
+    top: -180px;
   }
-  .purple-box .box-top {
-    width: 230px !important;
+
+  .sec-mid {
+    margin-bottom: -130px;
   }
-}
-@media (max-width: 290px) {
-  .sec-mid-middle .p-2 {
-    width: 270px;
+  .sec-mid .php-java {
+    margin-top: 40px !important;
+    margin-bottom: -90px !important;
+  }
+  .sec-mid .php-java .java {
+    margin-left: -30px;
+    width: 270px !important;
+    height: 270px !important;
   }
 
   .section-img {
@@ -1294,8 +1492,58 @@ footer .limited {
     width: 50px;
   }
 
+  .sec-mid-middle .svg-img {
+    margin-left: -30px !important;
+  }
   .sec-mid-middle .svg-img .illustrated {
-    width: 200px;
+    width: 350px !important;
+  }
+
+  .purple-box .box-bottom {
+    width: 230px !important;
+  }
+  .purple-box .box-top {
+    width: 230px !important;
+  }
+}
+@media (max-width: 290px) {
+  .sec-mid {
+    margin-bottom: -130px;
+  }
+  .sec-mid .php-java {
+    margin-top: 40px !important;
+    margin-bottom: -90px !important;
+  }
+  .sec-mid .php-java .java {
+    margin-left: -30px;
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .section-img {
+    margin-top: 50px;
+    align-content: center;
+  }
+  .section-img h2 {
+    font-size: 18px;
+    color: #21214c;
+    font-weight: 700;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .section-img .logo-bar ul {
+    display: block;
+  }
+  .section-img .logo-bar ul li img {
+    width: 50px;
+  }
+
+  .sec-mid-middle .svg-img {
+    margin-left: -30px !important;
+  }
+  .sec-mid-middle .svg-img .illustrated {
+    width: 320px !important;
   }
 
   .last-sec-top .img-tag .padd {
