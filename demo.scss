@@ -44,14 +44,14 @@ header {
 
             .products {
                 min-height: 100px;
-                width: 650px;
+                min-width: 50px;
                 justify-content: space-around;
-
+                
                 .product {
                     line-height: 30px;
                     width: 50%;
                     height: fit-content;
-
+                  
                     img {
                         width: 25px;
                         height: 25px;
@@ -72,7 +72,7 @@ header {
                                 .platform {
                                     width: 50%;
                                     line-height: 30px;
-                
+                                    padding-right: 20px;
                                     b {
                                         color: #4b4b6e;
                                         display: block;
@@ -199,6 +199,7 @@ header {
     background-image: linear-gradient(to right, #7a3d95, #463890);
     margin-bottom: 100px;
     border-radius: 20px;
+    
     img {
            padding-left: 100px;
            
@@ -211,8 +212,6 @@ header {
             width: 50%;
             min-height: 80vh;
             margin-top: 70px;
-           
-            
             h1{
                 color: white;
                 font-size: 66px;
@@ -237,7 +236,7 @@ header {
         .form{
             min-height: 80vh;
             width: 50%;
-            margin-top: 50px;
+            margin-bottom: 80px;
             input {
                     border-radius: 5px;
                     padding: 3px;
@@ -247,16 +246,16 @@ header {
                    
                 }
                                  .wid {
-                                   width: 60%;
+                                   width: 80%;
                                  }
                                  .widt{
-                                     width: 60%;
+                                     width: 80%;
                                      padding-bottom: 60px;
                                      border-radius: 15px;
                                  }
                              
                                  .btn{
-                                     width: 60%;
+                                     width: 80%;
                                      background-color: blue;
                                  }
         }
@@ -371,12 +370,14 @@ width: 60%;
     font-weight: 700;
     font-family: 'poppins';
     }
+        
     .line-3{
         height: 520px;
         width: 100px;
             margin-left: 20px;
             padding: 10px;
             margin-top: -40px;
+      
             .image-line {
                     width: 70px;
                     height: 70px;
@@ -670,12 +671,8 @@ footer{
             }
         }
 }
-@media(max-width:915px){
-  
-}
-@media(max-width:840px){
-  
-}
+
+
 @media(max-width:750px){
     .review {
             display: none;
@@ -684,6 +681,7 @@ footer{
         .carousel {
             display: inherit !important;
             width: 100%;
+            
             .customer-speach {
             
                     .customers {
@@ -691,7 +689,7 @@ footer{
                         margin-left: 30px !important;
             
                         .strong {
-                            padding: 15px;
+                            padding: 5px;
                         }
                     }
                 }
@@ -710,12 +708,32 @@ footer{
         flex-direction: column;
         .demo{
             width: 100% !important;
-            
+            p{
+                width: 90% !important;
+            }
         }
         .form{
             width: 100% !important;
+            height: 50px ;
+            input{
+                width: 100% !important;
+            }
         }
     } 
+
+          .products {
+              min-height: 350px !important;
+              width: 450px;
+              justify-content: space-around;
+                position: relative;
+                    overflow-y: scroll;
+                    margin-left: -50px;
+            .dropdown-item{
+                flex-direction: column;
+                position: absolute;
+            }
+    
+          }
 }
 @media(max-width:500px){
         footer {
@@ -733,6 +751,20 @@ footer{
                 }
             }
 }
+@media(max-width:450px){
+    .resources {
+            min-height: 250px !important;
+            width: 250px!important;
+            justify-content: space-around;
+            position: relative;
+                overflow-y: scroll;
+                margin-left: -50px;
+        .dropdown-item {
+                flex-direction: column;
+                position: absolute;
+            }
+        }
+}
 @media(max-width:400px){
     footer {
             .footer-brand {
@@ -746,25 +778,4 @@ footer{
                 }
             }
         }
-}
-@media(max-width:300px){
-    .book-demo{
-        .demo{
-            h1{
-                font-size: 34px !important;
-                margin-bottom: 20px !important;
-            }
-            .form{
-                    .wid {
-                            width: 100% !important;
-                        }
-                        .widt {
-                            width: 100% !important;
-                        }
-                        .btn{
-                            width: 100% !important;
-                        }
-            }
-        }     
-}
 }
