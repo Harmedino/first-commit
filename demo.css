@@ -37,7 +37,7 @@ header ul li .nav-link:hover {
 }
 header ul li .products {
   min-height: 100px;
-  width: 650px;
+  min-width: 50px;
   justify-content: space-around;
 }
 header ul li .products .product {
@@ -61,6 +61,7 @@ header ul li .products .product p {
 header ul li .products .platform {
   width: 50%;
   line-height: 30px;
+  padding-right: 20px;
 }
 header ul li .products .platform b {
   color: #4b4b6e;
@@ -200,7 +201,7 @@ header .sign:hover {
 .a-demo .book-demo .form {
   min-height: 80vh;
   width: 50%;
-  margin-top: 50px;
+  margin-bottom: 80px;
 }
 .a-demo .book-demo .form input {
   border-radius: 5px;
@@ -210,15 +211,15 @@ header .sign:hover {
   padding: 5px;
 }
 .a-demo .book-demo .form .wid {
-  width: 60%;
+  width: 80%;
 }
 .a-demo .book-demo .form .widt {
-  width: 60%;
+  width: 80%;
   padding-bottom: 60px;
   border-radius: 15px;
 }
 .a-demo .book-demo .form .btn {
-  width: 60%;
+  width: 80%;
   background-color: blue;
 }
 
@@ -604,7 +605,7 @@ footer .limited {
     margin-left: 30px !important;
   }
   .carousel .customer-speach .customers .strong {
-    padding: 15px;
+    padding: 5px;
   }
 }
 @media (max-width: 650px) {
@@ -614,8 +615,28 @@ footer .limited {
   .book-demo .demo {
     width: 100% !important;
   }
+  .book-demo .demo p {
+    width: 90% !important;
+  }
   .book-demo .form {
     width: 100% !important;
+    height: 50px;
+  }
+  .book-demo .form input {
+    width: 100% !important;
+  }
+
+  .products {
+    min-height: 350px !important;
+    width: 450px;
+    justify-content: space-around;
+    position: relative;
+    overflow-y: scroll;
+    margin-left: -50px;
+  }
+  .products .dropdown-item {
+    flex-direction: column;
+    position: absolute;
   }
 }
 @media (max-width: 500px) {
@@ -630,26 +651,25 @@ footer .limited {
     margin-left: 0px;
   }
 }
+@media (max-width: 450px) {
+  .resources {
+    min-height: 250px !important;
+    width: 250px !important;
+    justify-content: space-around;
+    position: relative;
+    overflow-y: scroll;
+    margin-left: -50px;
+  }
+  .resources .dropdown-item {
+    flex-direction: column;
+    position: absolute;
+  }
+}
 @media (max-width: 400px) {
   footer .footer-brand .links-box a {
     display: block;
     margin-top: 10px;
     text-align: center;
-  }
-}
-@media (max-width: 300px) {
-  .book-demo .demo h1 {
-    font-size: 34px !important;
-    margin-bottom: 20px !important;
-  }
-  .book-demo .demo .form .wid {
-    width: 100% !important;
-  }
-  .book-demo .demo .form .widt {
-    width: 100% !important;
-  }
-  .book-demo .demo .form .btn {
-    width: 100% !important;
   }
 }
 
